@@ -1,1 +1,8 @@
-<p>customers works!</p>
+<div>
+  <ul>
+    <li *ngIf="customers.length === 0">la lista esta vacia</li>
+    <li *ngFor="let customer of customers; index as i">
+      {{ customer.Name }} {{ i }}
+    </li>
+</ul>
+</div>
